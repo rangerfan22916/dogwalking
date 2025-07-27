@@ -108,18 +108,24 @@
 
 <body>
     <header>
-        <div class="nav-container">
-            <h1><a href="index.html">Drew's Dog Walking</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="booking.html" class="active">Book Now</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-success" href="index.html">Drew's Dog Walking</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="booking.html">Book Now</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="container my-5">
