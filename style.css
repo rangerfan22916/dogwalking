@@ -259,3 +259,72 @@ nav a:hover {
   transform: scale(1.08);
   transition: transform 0.3s ease;
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .hero-content {
+    padding: 30px 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  #highlight {
+    padding: 50px 15px;
+  }
+
+  #highlight h3 {
+    font-size: 1.5rem;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content .btn {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+}

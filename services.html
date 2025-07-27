@@ -5,14 +5,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Services - Drew's Dog Walking</title>
+
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- ✅ Your CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- ✅ Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(to right, #fdfbfb, #ebedee);
-            overflow: hidden;
             color: #333;
         }
 
@@ -55,23 +63,15 @@
         }
 
         section.container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            box-sizing: border-box;
-            overflow: hidden;
+            padding: 60px 20px;
+            text-align: center;
         }
 
         .grid {
             display: flex;
-            flex-wrap: nowrap;
-            gap: 50px;
+            flex-wrap: wrap;
+            gap: 40px;
             justify-content: center;
-            align-items: flex-start;
         }
 
         .card {
@@ -79,18 +79,16 @@
             border-radius: 20px;
             box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
             padding: 30px;
-            width: 420px;
-            height: 520px;
+            width: 100%;
+            max-width: 400px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: flex-start;
         }
 
         .card h2 {
             font-size: 1.8rem;
             margin-bottom: 20px;
-            text-align: left;
             color: #222;
         }
 
@@ -112,6 +110,18 @@
             margin-top: 25px;
             color: #555;
         }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 
@@ -120,12 +130,12 @@
         <div class="nav-container">
             <h1><a href="index.html">🐾 Drew's Dog Walking</a></h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html" class="active">Services</a></li>
-                    <li><a href="booking.html">Book Now</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-dark">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link text-dark">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link active text-success">Services</a></li>
+                    <li class="nav-item"><a href="booking.html" class="nav-link text-dark">Book Now</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link text-dark">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -147,7 +157,7 @@
                 </ul>
             </div>
 
-            <!-- Discounts & Other Pets Card -->
+            <!-- Other Pets & Discounts Card -->
             <div class="card">
                 <h2>🐾 Other Pets & Discounts</h2>
                 <ul>

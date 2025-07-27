@@ -5,55 +5,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Drew</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- ✅ Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- ✅ Your CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ✅ Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- ✅ Your JS -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <div class="nav-container">
-            <h1><a href="index.html">Drew's Dog Walking</a></h1>
+    <header class="bg-white shadow-sm">
+        <div class="nav-container container d-flex justify-content-between align-items-center py-3">
+            <h1 class="mb-0">
+                <a href="index.html" class="text-decoration-none text-dark fw-bold">Drew's Dog Walking</a>
+            </h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="booking.html">Book Now</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-dark">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link text-dark">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link text-dark">Services</a></li>
+                    <li class="nav-item"><a href="booking.html" class="nav-link text-dark">Book Now</a></li>
+                    <li class="nav-item"><a href="contact.html"
+                            class="nav-link active text-success fw-semibold">Contact</a></li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
-    <section class="container" style="padding: 60px 20px; text-align: center;">
-        <h2 style="margin-bottom: 40px;">Get in Touch</h2>
+    <section class="container py-5 text-center">
+        <h2 class="mb-5">Get in Touch</h2>
 
-        <div style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
-            <div
-                style="background: #fff; padding: 25px 30px; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); max-width: 500px; width: 100%; display: flex; align-items: center; gap: 20px;">
-                <i class="fas fa-phone-alt" style="font-size: 1.8rem; color: #4caf50;"></i>
-                <div>
-                    <h3 style="margin: 0 0 5px;">Phone</h3>
-                    <p style="margin: 0;"><a href="tel:7322211723"
-                            style="color: #333; text-decoration: none;">732-221-1723</a></p>
+        <div class="row justify-content-center g-4">
+            <!-- Phone Box -->
+            <div class="col-md-6 col-lg-5">
+                <div class="bg-white p-4 rounded shadow-sm d-flex align-items-center gap-3">
+                    <i class="fas fa-phone-alt fs-3 text-success"></i>
+                    <div class="text-start">
+                        <h3 class="h5 mb-1">Phone</h3>
+                        <p class="mb-0"><a href="tel:7322211723" class="text-decoration-none text-dark">732-221-1723</a>
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div
-                style="background: #fff; padding: 25px 30px; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); max-width: 500px; width: 100%; display: flex; align-items: center; gap: 20px;">
-                <i class="fas fa-envelope" style="font-size: 1.8rem; color: #4caf50;"></i>
-                <div>
-                    <h3 style="margin: 0 0 5px;">Email</h3>
-                    <p style="margin: 0;"><a href="mailto:lichtenthaldrew@gmail.com"
-                            style="color: #333; text-decoration: none;">lichtenthaldrew@gmail.com</a></p>
+            <!-- Email Box -->
+            <div class="col-md-6 col-lg-5">
+                <div class="bg-white p-4 rounded shadow-sm d-flex align-items-center gap-3">
+                    <i class="fas fa-envelope fs-3 text-success"></i>
+                    <div class="text-start">
+                        <h3 class="h5 mb-1">Email</h3>
+                        <p class="mb-0"><a href="mailto:lichtenthaldrew@gmail.com"
+                                class="text-decoration-none text-dark">lichtenthaldrew@gmail.com</a></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 </body>
 
 </html>
