@@ -7,28 +7,29 @@
     <title>Services - Drew's Dog Walking</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        /* Make service page text bigger and easier to read */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fafafa;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+            overflow: hidden;
             color: #333;
         }
 
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
         }
 
         header h1 a {
             text-decoration: none;
             color: #333;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: bold;
         }
 
         nav ul {
@@ -43,49 +44,72 @@
             text-decoration: none;
             color: #555;
             font-weight: bold;
-            padding-bottom: 4px;
-            transition: color 0.3s, border-bottom 0.3s;
+            transition: 0.3s;
         }
 
         nav a:hover,
         nav a.active {
             color: #4caf50;
             border-bottom: 2px solid #4caf50;
-            padding-bottom: 4px;
+            padding-bottom: 2px;
         }
 
         section.container {
-            max-width: 800px;
-            margin: 60px auto;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 50px;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .card {
             background: white;
-            padding: 30px 40px;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            font-size: 1.25rem;
-            line-height: 1.7;
-            color: #444;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            padding: 30px;
+            width: 420px;
+            height: 520px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
         }
 
-        section.container h2 {
-            margin-top: 0;
-            color: #333;
-            font-size: 2rem;
-            margin-bottom: 25px;
-            text-align: center;
+        .card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: left;
+            color: #222;
         }
 
-        section.container ul {
-            padding-left: 20px;
-        }
-
-        section.container ul li {
-            margin-bottom: 18px;
-        }
-
-        section.container p {
-            margin-top: 25px;
+        .card ul {
+            list-style: none;
+            padding: 0;
             font-size: 1.1rem;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+        }
+
+        .note {
             text-align: center;
+            font-size: 1rem;
+            margin-top: 25px;
             color: #555;
         }
     </style>
@@ -94,7 +118,7 @@
 <body>
     <header>
         <div class="nav-container">
-            <h1><a href="index.html">Drew's Dog Walking</a></h1>
+            <h1><a href="index.html">🐾 Drew's Dog Walking</a></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -107,18 +131,40 @@
         </div>
     </header>
 
-    <section class="container" style="padding: 60px 20px;">
-        <h2>Our Services</h2>
-        <ul>
-            <li><strong>🐾 30-Minute Walk:</strong> $25 – Perfect for quick exercise and potty break.</li>
-            <li><strong>🐾 60-Minute Walk:</strong> $45 – Great for energetic dogs needing more activity.</li>
-            <li><strong>🐶 Puppy Play Visit:</strong> $50 – Includes indoor/outdoor play and walk,feeding if needed.
-            </li>
-            <li><strong>🦴 Weekend Packages:</strong> $100 – Two-three walks per day, Saturday & Sunday.</li>
-        </ul>
-        <p>All services include fresh water, belly rubs, and live text updates.</p>
-    </section>
+    <section class="container">
+        <div class="grid">
+            <!-- Services Card -->
+            <div class="card">
+                <h2>🐶 Walks & Visits</h2>
+                <ul>
+                    <li>🐾 Dog Walk: $20</li>
+                    <li>⏱️ Extra 60 min: +$12</li>
+                    <li>🎄 Holiday Walk: $25</li>
+                    <li>➕ Holiday Extra Time: +$13</li>
+                    <li>🐕‍🦺 Additional pet: +$10 (or $8 for 2nd dog)</li>
+                    <li>🍼 Puppy Walk: $22</li>
+                    <li>🏃‍♂️ Play Visit (All Pets): $35</li>
+                </ul>
+            </div>
 
+            <!-- Discounts & Other Pets Card -->
+            <div class="card">
+                <h2>🐾 Other Pets & Discounts</h2>
+                <ul>
+                    <li>🐱 Cat Care: $18 per visit</li>
+                    <li>🦎 Reptile Care: $10 per visit</li>
+                    <li>🐰 Small Pet Care: $10 per visit</li>
+                    <hr>
+                    <li>📦 5 Walks: $90 (Save $10)</li>
+                    <li>🍼 5 Puppy Walks: $100</li>
+                    <li>🎉 First Visit: 10% Off</li>
+                    <li>💳 Loyalty: 10th Visit Free</li>
+                    <li>👥 Referral: $10 Off Next Visit</li>
+                </ul>
+            </div>
+        </div>
+        <p class="note">🐾 All services include water, belly rubs, and live text updates!</p>
+    </section>
 </body>
 
 </html>
