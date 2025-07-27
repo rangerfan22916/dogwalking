@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Services - Drew's Dog Walking</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Make service page text bigger and easier to read */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header h1 a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            padding-bottom: 4px;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #4caf50;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 4px;
+        }
+
+        section.container {
+            max-width: 800px;
+            margin: 60px auto;
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            font-size: 1.25rem;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        section.container h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        section.container ul {
+            padding-left: 20px;
+        }
+
+        section.container ul li {
+            margin-bottom: 18px;
+        }
+
+        section.container p {
+            margin-top: 25px;
+            font-size: 1.1rem;
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <h1><a href="index.html">Drew's Dog Walking</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container" style="padding: 60px 20px;">
+        <h2>Our Services</h2>
+        <ul>
+            <li><strong>🐾 30-Minute Walk:</strong> $25 – Perfect for quick exercise and potty break.</li>
+            <li><strong>🐾 60-Minute Walk:</strong> $45 – Great for energetic dogs needing more activity.</li>
+            <li><strong>🐶 Puppy Play Visit:</strong> $50 – Includes indoor/outdoor play and walk,feeding if needed.
+            </li>
+            <li><strong>🦴 Weekend Packages:</strong> $100 – Two-three walks per day, Saturday & Sunday.</li>
+        </ul>
+        <p>All services include fresh water, belly rubs, and live text updates.</p>
+    </section>
+
+</body>
+
+</html>
