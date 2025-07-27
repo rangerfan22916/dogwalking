@@ -113,7 +113,7 @@
   }
   
   .hero-content .btn:hover {
-    background: #fff176;
+    background: #4caf50;
     transform: scale(1.05);
   }
   
@@ -207,4 +207,55 @@
     to {
       opacity: 1;
     }
+    /* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
   }
+  /* Scroll to Top Button Styles (hidden by default) */
+#toTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: none;
+  z-index: 1000;
+}
+
+#toTopBtn:hover {
+  background: #388e3c;
+  transform: scale(1.1);
+}
+
+/* Fade-in helper classes for smooth animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add subtle hover scale effect on nav links */
+nav a:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Add subtle hover scale effect on buttons */
+.hero-content .btn:hover {
+  transform: scale(1.08);
+  transition: transform 0.3s ease;
+}
